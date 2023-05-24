@@ -21,6 +21,7 @@ const CommentItem: FC<CommentItemProps> = ({ data }) => {
       return null;
     }
 
+
     return formatDistanceToNowStrict(new Date(data.createdAt));
   }, [data?.createdAt]);
 
